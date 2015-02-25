@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+        <aside class="userPanel">
+            <div class="logoApp">
+                <div class="logoApp-imageContainer">
+                    <img src="images/R2D2.png" alt="">
+                </div>
+                <h1 class="logoApp-title">eAudit</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="navigation-item active" href="perencana-dashboard.html"><img class="navigation-icon" src="images/globe.svg" alt="">Dashboard</a></li>
+                    <!-- Dropdown menu item -->
+                    <li class="dropdown">
+                        <input class="dropdown-input" id="drop1" type="checkbox" >
+                        <label class="dropdown-label" for="drop1"><img class="navigation-icon" src="images/archive.svg" alt="">Archived SP</label>
+                        <ul class="dropdown-content">
+                            <li ><a class="dropdown-item"href="#">IrBan I</a></li>
+                            <li ><a class="dropdown-item " href="#">IrBan II</a></li>
+                            <li ><a class="dropdown-item"href="#">IrBan III</a></li>
+                            <li ><a class="dropdown-item"href="#">IrBan IV</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navigation-item" href="perencana-dashboard-pkpt.html"><img class="navigation-icon" src="images/clipboard.svg" alt="">PKPT</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="mainSection">
+            <header class="topBar">
+                <div class="relative tooltipMenu-trigger">
+                    <div class="tooltipMenu">
+                        <ul>
+                            <li><a href="#">Account Setting</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <img class="topBar-icon float-right" src="images/cog.svg" alt="">
+                </div>
+                <p class="topBar-welcome float-right">Welcome, <strong>Johnny Tornado</strong></p>
+            </header>
+
+            <section class="toolbar">
+                <header class="toolbar-header">
+                    <h2 class="toolbar-title">Surat Perintah Maret 2015</h2>
+                </header>
+                <section class="toolbar-option">
+                    <span>You have 1 documents</span>
+                </section>
+
+            </section>
+
+            <main class="mainContent">
+                
+
+                        <article class="docContainer text-center newdocContainer">
+                            <a href="perencana-create-sp.html" class="button-flat">Create New SP</a>
+                        </article>                        
+
+
+                        <section class="docContainer">
+                            <a href="perencana-detail-sp.html">
+                                <article class="docContainer-content">                                    
+                                    <img class="docContainer-iconDetail" src="images/magnifying-glass.svg" alt="">
+                                    <header class="docContainer-header">
+                                        <!-- <h2>Kecamatan Sukasari Kota Bandung</h2> -->
+                                        <h2>Kecamatan</h2>
+                                        <h4>700/02-SP/Irban-I/2015</h4>
+                                    </header>
+                                    <div class="docContainer-info">
+                                        <span>Audit Pelayanan Publik</span>
+                                        <span>Tanggal Surat : <strong>12-01-2015</strong></span>
+                                    </div>
+                                </article>                               
+                            </a>
+                            <footer class="docContainer-footer">
+                                <a href="perencana-detail-sp.html" class="float-right button-doc">Detail</a>
+                            </footer>
+                        </section>
+
+                        <section class="docContainer">
+                            <a href="perencana-detail-sp.html">
+                                <article class="docContainer-content">                                    
+                                    <img class="docContainer-iconDetail" src="images/magnifying-glass.svg" alt="">
+                                    <header class="docContainer-header">
+                                        <!-- <h2>Sekretariat Dewan Perwakilan Rakyat Daerah Kota Bandung</h2> -->
+                                        <h2>Dinas</h2>
+                                        <h4>700/01-SP/Irban-II/2015</h4>
+                                    </header>
+                                    <div class="docContainer-info">
+                                        <span>Audit Kontrak Pihak Ketiga</span>
+                                        <span>Tanggal Surat : <strong>30-01-2015</strong></span>
+                                    </div>
+                                </article>                               
+                            </a>
+                            <footer class="docContainer-footer">
+                                <a href="perencana-detail-sp.html" class="float-right button-doc">Detail</a>
+                            </footer>
+                        </section>   
+
+                        
+
+            </main>
+        </section>
+
+
+
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    </body>
+</html>

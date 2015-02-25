@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+        <aside class="userPanel">
+            <div class="logoApp">
+                <div class="logoApp-imageContainer">
+                    <img src="images/R2D2.png" alt="">
+                </div>
+                <h1 class="logoApp-title">eAudit</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="navigation-item active" href="perencana-dashboard.html"><img class="navigation-icon" src="images/globe.svg" alt="">Dashboard</a></li>
+                    <!-- Dropdown menu item -->
+                    <li class="dropdown">
+                        <input class="dropdown-input" id="drop1" type="checkbox" >
+                        <label class="dropdown-label" for="drop1"><img class="navigation-icon" src="images/archive.svg" alt="">Archived SP</label>
+                        <ul class="dropdown-content">
+                            <li ><a class="dropdown-item"href="#">IRBAN I</a></li>
+                            <li ><a class="dropdown-item " href="#">IRBAN II</a></li>
+                            <li ><a class="dropdown-item"href="#">IRBAN III</a></li>
+                            <li ><a class="dropdown-item"href="#">IRBAN IV</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navigation-item" href="perencana-dashboard-pkpt.html"><img class="navigation-icon" src="images/clipboard.svg" alt="">PKPT</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="mainSection">
+            <header class="topBar">
+                <div class="relative tooltipMenu-trigger">
+                    <div class="tooltipMenu">
+                        <ul>
+                            <li><a href="#">Account Setting</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <img class="topBar-icon float-right" src="images/cog.svg" alt="">
+                </div>
+                <p class="topBar-welcome float-right">Welcome, <strong>Johnny Tornado</strong></p>
+            </header>
+
+            <section class="toolbar">
+                <header class="toolbar-header">
+                    <a href="perencana-dashboard.html"><img class="tabs-backIcon" src="images/ic_arrow_back_36px.svg" alt=""></a>
+                    <h2 class="toolbar-title">Create new SP</h2>
+                </header>
+
+            </section>
+
+            <main class="mainContent">
+                
+                <form class="formContainer">
+                    
+                    <table class="tableForm">
+                      <tbody>
+                        <tr>
+                            <td>IRBAN</td>
+                            <td>
+                                <select name="select_element">
+                                    <option value="1">IRBAN 1</option>
+                                    <option value="2">IRBAN 2</option>
+                                    <option value="3">IRBAN 3</option>
+                                    <option value="3">IRBAN 4</option>
+                                    <option value="3">IRBAN 5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Surat</td>
+                            <td>4 Februari 2015</td>
+                        </tr>
+                        <tr>
+                            <td>Nomor Surat</td>
+                            <!-- <td>700/1167/2015</td> -->
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Audit</td>
+                            <td>Bandung</td>
+                        </tr>
+                        <tr>
+                            <td>Hari Kerja</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Objek</td>
+                            <td>
+                                <select name="select_element">
+                                    <option value="1">Dinas</option>
+                                    <option value="2">Badan</option>
+                                    <option value="3">Kantor</option>
+                                    <option value="3">Sekolah</option>
+                                    <option value="3">Kecamatan</option>
+                                    <option value="3">Rumah Sakit Daerah</option>
+                                    <option value="3">BUMD</option>
+                                    <option value="3">Inspektorat</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Audit</td>
+                            <td>
+                                <select name="select_element">
+                                    <option value="1">Audit Tertentu</option>
+                                    <option value="2">Audit Pelayana Publik</option>
+                                    <option value="3">Audit Kontrak Pihak Ketiga</option>
+                                    <option value="3">Audit Operational</option>
+                                    <option value="3">Pemeriksaan Khusus</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Objek Pemeriksa</td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="tableForm-buttonArea group">
+                        <input class="button-flat float-right" type="submit" value="Create">
+                    </div>
+                </form>
+
+            </main>
+        </section>
+
+
+
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    </body>
+</html>

@@ -1,0 +1,33 @@
+.tooltipMenu {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	margin-top: 35px;
+	right: 0;
+	background: #fff;
+	box-shadow: $materialz2;
+	border-radius: 3px;
+	transition: all 0.2s ease-in-out;
+
+	&:hover ~ .topBar-icon {
+		opacity: .6;
+	}
+
+	.tooltipMenu-trigger:hover & {
+		visibility: visible;
+		opacity: 1;
+		margin-top: 40px;
+		transition: all 0.2s ease-in-out;
+	}
+
+	a {
+		display: block;
+		padding: 7px 20px;
+		color: rgba(0,0,0,.7);
+
+		&:hover {
+			background: rgba(0,0,0,.05);
+		}
+		 
+	}
+}

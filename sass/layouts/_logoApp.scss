@@ -1,0 +1,26 @@
+$logoApp-bg: shade($userPanel-bg-color, 30%);
+$logoApp-title-color: #fff;
+
+
+.logoApp {
+	height: 100px;
+	padding: 25px 50px;
+	background: $logoApp-bg;
+
+	&-imageContainer {
+		float: left;
+		display: inline-block;
+		height: 50px;
+		margin-right: 1em;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	&-title {
+		color: $logoApp-title-color;
+		line-height: 50px;
+		font-family: serif;
+	}
+}

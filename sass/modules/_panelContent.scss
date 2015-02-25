@@ -1,0 +1,38 @@
+.panelContent {
+	position: relative;
+	display: inline-block;
+	margin: 0 2em 2em 2em;
+	background-color: #FFF;
+	border-radius: 4px;
+	box-shadow: $box-shadow-1;
+	vertical-align: top;
+	opacity: 1;
+	float: left;
+	min-width: 550px;
+
+	&-header.dark{
+		padding: 2em 3em;
+		border-radius: 3px 3px 0 0;
+		background: tint($userPanel-bg-color, 10%);
+		color: rgba(255,255,255, 1);
+	}
+	&-header.light {
+		@extend .panelContent-header.dark;
+		// background: #f7f7f7;
+		background: #fff;
+		color: $body-color;
+		border-bottom: 1px solid gainsboro; 
+		
+	}
+
+	&-title {
+		// text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	article {
+		padding: 2em 3em;
+		border-radius: 0 0 3px 3px;
+		background: #fff;
+	}
+}

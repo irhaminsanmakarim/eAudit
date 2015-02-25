@@ -1,0 +1,17 @@
+.toolbar {
+	background: #fff;
+	box-shadow: $box-shadow-1;
+
+	&-header {
+		padding: 1.5em 2em;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	&-title {
+
+	}
+
+	&-option {
+		padding: 1em 2em 1em;
+	}
+}

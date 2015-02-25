@@ -1,0 +1,56 @@
+.tabs {
+	background: #fff;
+	box-shadow: $box-shadow-1;
+
+	&-header {
+		padding: 1.5em 2em;
+		// border-bottom: 1px solid #f0f0f0;
+	}
+
+	&-title {
+
+	}
+
+	&-backIcon {
+		width: 34px;
+		height: 34px;
+		float: left;
+		margin-right: 15px;
+		max-width: 100%;
+		vertical-align: middle;
+		display: inline-block;
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.05);
+		}
+	}
+
+	&-section {
+		padding-left: 2em;
+		margin: 0;
+		overflow: auto;
+	}
+	
+	ul {
+		// @extend .group;
+		// clear: both;
+	}
+
+	&-item {
+		display: inline-block;
+		float: left;
+		padding: 1em 0 1em;
+		margin: 0 1em;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-bottom: 3px solid transparent;
+
+		&.active {
+			border-bottom: 3px solid #1c6a9e;
+		}
+
+		.tabs-section li:first-child & {
+			margin-left: 0;
+		}
+	}
+}
